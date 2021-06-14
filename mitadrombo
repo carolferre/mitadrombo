@@ -1,0 +1,15 @@
+
+print("Determine la anchura del dibujo")
+anchura=int(input())
+
+def mitadRombo(anchura):
+    for i in range(1,anchura+1):
+        for x in range(i):
+            print("+ ",end='')
+        print()
+
+    for i in range(1,anchura):
+        for x in range(anchura-i):
+            print("+ ",end='')
+        print()
+mitadRombo(anchura)
